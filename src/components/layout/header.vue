@@ -1,17 +1,20 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="dark" variant="info" class="header p-5">
-            <router-link class="header" to="/">BOOK STORE</router-link>
+        <b-navbar toggleable="lg" type="dark" class="header">
+        <b-navbar-nav>
+        <b-nav-form >
+          <b-form-input size="sm" class=" border-0 mr-sm-2" placeholder="Search books"></b-form-input>
+        </b-nav-form>
+        </b-navbar-nav>
             <b-navbar-nav class="ml-auto" >
-                <router-link class="header" to="/bookregistration">add new book</router-link>
+                <router-link to="/bookregistration">
+                    <b-icon icon="person" style="color: #3b3b3b;"></b-icon>
+                </router-link>
             </b-navbar-nav>
         </b-navbar>
     </div>
 </template>
 
 <style scoped>
-   .header{
-      color:rgba(58, 2, 68, 0.863)!important;
-      text-decoration: none
-    }
+
 </style>
