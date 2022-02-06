@@ -3,6 +3,9 @@
       <Sidebar/>
       <div class="col-8 mx-1 mt-3">
       <Header/>
+      <b-row align-h="start" class="m-4">
+        <b>We recommend</b>
+      </b-row>
       <div class="p-3">
         <b-card no-body class="overflow-hidden border-0" >
           <b-row no-gutters>
@@ -16,7 +19,7 @@
                   <p style="color: red">by {{selectBook.author}}</p>
                   <p>{{selectBook.Description}}<br><br></p>
                   <div  class="d-flex justify-content-between">
-                  <p style="color: black">$ {{selectBook.price}}</p>
+                  <p style="font-size:0.9rem; color: black">$ {{selectBook.price}}</p>
                   <b-button class="m-3 button" variant="link" v-on:click="onSubmit(selectBook.id)">delete</b-button>
                   </div>
                 </b-card-text>
@@ -25,7 +28,7 @@
           </b-row>
         </b-card>
       </div>
-      <footer>
+      <footer class="mt-5">
         <Footercard/>
       </footer>
       </div>
@@ -61,5 +64,12 @@ export default {
 <style scoped>
 .sidebar{
   color: white;
+}
+.button{
+  color: #818181;
+  text-decoration: none;
+}
+.button:hover{
+  color: black;
 }
 </style>

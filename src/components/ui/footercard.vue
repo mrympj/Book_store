@@ -1,6 +1,6 @@
 <template>
-        <b-row>
-            <FooterCardValue v-for="index in bookList" :key="index" :bookList="index"/>
+        <b-row class="mx-1">
+            <FooterCardValue v-for="index in bookList.slice(0,5)" :key="index" :bookList="index"/>
         </b-row>
 </template>
 
@@ -15,14 +15,13 @@ export default {
   },
   data () {
     return {
-      bookList: []
+      bookList: {}
     }
   },
   mounted () {
     axios.get('https://6102a09f79ed680017482214.mockapi.io/api/v1/Books')
       .then((result) => {
         this.bookList = result.data
-        console.warn(result)
       })
   }
 }

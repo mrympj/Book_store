@@ -22,12 +22,10 @@ export default {
     axios.get('https://6102a09f79ed680017482214.mockapi.io/api/v1/Books/' + this.$route.params.id)
       .then((result) => {
         this.selectBook = result.data
-        console.warn(result)
       })
     axios.get('https://6102a09f79ed680017482214.mockapi.io/api/v1/Books')
       .then((result) => {
         this.bookList = result.data
-        console.warn(result)
       })
   }
 }
