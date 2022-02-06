@@ -6,8 +6,9 @@
       <b-row align-h="center">
       <Card v-for="index in book.slice(4,7)" :key="index" :bookList="index" />
       </b-row>
-      <b-row align-h="start" class="m-4">
-        <b>Browse</b>
+      <b-row align-h="between" style="font-size:1.3rem">
+        <b class="m-2 col-1">Browse</b>
+        <b class="col-5 mx-5" >Authors</b>
       </b-row>
       <b-row style="background-color: #fdfdfd" class="col-8">
           <BrowseCardValue v-for="index in book.slice(0,3)" :key="index" :bookList="index"/>

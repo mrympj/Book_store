@@ -2,9 +2,12 @@
     <div>
         <b-navbar toggleable="lg" type="dark" class="header">
         <b-navbar-nav>
-        <b-nav-form >
-          <b-form-input size="sm" class=" border-0 mr-sm-2" placeholder="Search books"></b-form-input>
-        </b-nav-form>
+            <b-nav-form >
+                <b-input-group is-text class="border-0">
+                    <b-icon  style="background-color:white;" icon="search"></b-icon>
+                </b-input-group>
+                <b-form-input type="search" placeholder="Search books" class="border-0"></b-form-input>
+            </b-nav-form>
         </b-navbar-nav>
             <b-navbar-nav class="ml-auto" >
                 <router-link to="/bookregistration">
@@ -14,7 +17,3 @@
         </b-navbar>
     </div>
 </template>
-
-<style scoped>
-
-</style>

@@ -1,5 +1,6 @@
 <template>
-<div class="m">
+  <b-container style="background-color: #ecf2ff">
+  <div style="background-color: #ecf2ff" class="m">
     <label>Name</label>
     <input type="text" name="name" v-model="posts.name" placeholder="Enter the name of the book..">
 
@@ -23,6 +24,7 @@
 
     <input v-on:click="postdata()" type="submit" value="add">
   </div>
+  </b-container>
 </template>
 
 <script>

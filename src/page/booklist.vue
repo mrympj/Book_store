@@ -1,6 +1,7 @@
 <template>
       <div style="background-color:white">
         <Header />
+        <hr>
         <Basecard/>
       </div>
 </template>
