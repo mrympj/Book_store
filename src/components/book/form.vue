@@ -1,6 +1,7 @@
 <template>
   <b-container style="background-color: #ecf2ff">
-  <div style="background-color: #ecf2ff" class="m">
+    <b-row style="background-color: #ecf2ff">
+  <div style="background-color: #ecf2ff" class="m col-7">
     <label>Name</label>
     <input type="text" name="name" v-model="posts.name" placeholder="Enter the name of the book..">
 
@@ -24,6 +25,10 @@
 
     <input v-on:click="postdata()" type="submit" value="add">
   </div>
+  <div class="col-5" style="background-color: #ecf2ff">
+      <img src="https://i.pinimg.com/originals/fc/fb/06/fcfb067bf3181b62b8cfc343d661188b.jpg" class="image" style="opacity:90%" height="715rem" width="500rem">
+    </div>
+    </b-row>
   </b-container>
 </template>
 
@@ -52,6 +57,12 @@ export default {
 </script>
 
 <style scoped>
+
+.image:hover{
+  transform: scale(1.06);
+  transition: .5s;
+}
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;

@@ -7,7 +7,7 @@
               </router-link>
         </div>
         <div style="background-color: #30385c">
-          <Sidebarvalue v-for="index in bookList.slice(2,9)" :key="index" :bookList="index"/>
+          <Sidebarvalue v-for="index in bookList" :key="index" :bookList="index"/>
         </div>
     </div>
 </template>
@@ -40,4 +40,5 @@ export default {
   text-decoration: none;
   color: white;
 }
+
 </style>
