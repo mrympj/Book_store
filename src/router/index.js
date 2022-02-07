@@ -19,6 +19,11 @@ const routes = [
     path: '/bookregistration',
     name: 'bookregistration',
     component: () => import('../page/bookregistration.vue')
+  },
+  { 
+    path: '*',
+    name:'404',
+    component: () => import('../page/pagenotfound.vue') 
   }
 ]
 
