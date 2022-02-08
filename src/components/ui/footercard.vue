@@ -1,7 +1,7 @@
 <template>
-        <b-row class="mx-1">
-            <FooterCardValue v-for="index in bookList.slice(0,5)" :key="index" :bookList="index"/>
-        </b-row>
+  <b-row class="mx-1">
+    <FooterCardValue v-for="index in bookList.slice(0,5)" :key="index" :bookList="index"/>
+  </b-row>
 </template>
 
 <script>
